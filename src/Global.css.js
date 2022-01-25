@@ -9,23 +9,15 @@ export const GlobalStyle = createGlobalStyle`
   --black: #0B0D17;
 }
 
-h1 {
-  font-size: 150px;
+body {
+  background: var(--black);
 }
 
-h2 {
-  font-size: 100px;
-}
-
-h3 {
-  font-size: 56px;
-}
-
-h4 {
-  font-size: 32px;
-}
-
+h1,
+h2,
+h3,
+h4,
 h5 {
-  font-size: 28px;
 }
+
 `
