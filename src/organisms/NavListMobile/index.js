@@ -3,10 +3,16 @@ import React from 'react';
 import { Wrapper } from './NavList.css';
 // molecules
 import NavLi from '../../molecules/NavLi';
+import BurgerMenu from '../../molecules/BurgerMenu';
 
-const NavListMobile = () => {
+const NavListMobile = ({ handleMenuClick, menuIsOpen }) => {
   return (
     <Wrapper>
+      <BurgerMenu 
+        handleMenuClick={handleMenuClick}
+        menuIsOpen={menuIsOpen}
+      />
+      
       <ul className="ul-container">
         <NavLi key="01" order="01" address="/home">Home</NavLi>
         <NavLi key="02" order="02" address="/destination">Destination</NavLi>
