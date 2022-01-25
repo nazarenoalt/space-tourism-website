@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 * {
-  border-sizing: border-box;
+  box-sizing: border-box;
 
   --light-blue: #D0D6F9;
   --white: #FFF;
@@ -11,13 +11,12 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
   background: var(--black);
+  margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+ul {
+  list-style: none;
+  margin: 0;
 }
 
 `

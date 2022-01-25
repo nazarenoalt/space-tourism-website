@@ -5,9 +5,6 @@ import { GlobalStyle } from './Global.css';
 // pages
 import Home from './pages/Home'
 
-// components
-import Navbar from './components/Navbar'
-
 // molecules
 import Heading1 from'./molecules/Heading1'
 import Heading2 from'./molecules/Heading2'
@@ -23,7 +20,6 @@ function App() {
   return (
   <React.Fragment>
     <GlobalStyle />
-    <Navbar />
     <Home />
    </React.Fragment>
   );
