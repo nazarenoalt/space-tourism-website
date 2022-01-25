@@ -4,7 +4,7 @@ import { Wrapper } from './NavList.css';
 // molecules
 import NavLi from '../../molecules/NavLi';
 
-const NavList = () => {
+const NavListDesktop = () => {
   return (
     <Wrapper>
       <NavLi key="01" order="01">Home</NavLi>
@@ -15,4 +15,4 @@ const NavList = () => {
   );
 };
 
-export default NavList;
+export default NavListDesktop;

@@ -1,10 +1,10 @@
 import React from 'react';
 // organisms
-import NavList from '../../organisms/NavList';
+import NavListMobile from '../../organisms/NavListMobile';
 
 const Navbar = () => {
   return (
-    <NavList />
+    <NavListMobile />
   );
 };
 

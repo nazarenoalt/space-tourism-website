@@ -4,9 +4,11 @@ import NavText from '../NavText';
 // styles
 import { Li } from './NavLi.css';
 
-const NavLi = ({ children, order }) => {
+const NavLi = ({ children, order, address }) => {
   return <Li>
-    <NavText><b>{order}</b> {children}</NavText>
+    <NavText>
+        <b>{order}</b> {children}
+    </NavText>
   </Li>;
 };
 
