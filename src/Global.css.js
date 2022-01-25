@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 * {
-  border-size: border-box;
+  border-sizing: border-box;
 
   --light-blue: #D0D6F9;
   --white: #FFF;
