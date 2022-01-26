@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-export const H1 = styled.h1`
-  font-size: 150px;
+export const Heading4 = styled.h4`
+  font-size: 32px;
   font-family: 'Cormorant Unicase', serif;
-  letter-spacing: 10px;
+  letter-spacing: 2.5px;
   color: var(--white);
+  text-transform: uppercase;
 `;

@@ -5,4 +5,5 @@ export const P = styled.p`
   letter-spacing: 2.7px;
   font-size: 14px;
   color: var(--white);
+  text-transform: uppercase;
 `;
