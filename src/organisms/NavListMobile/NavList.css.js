@@ -9,4 +9,5 @@ export const Wrapper = styled.div`
   width: 254px;
   display: hidden;
   backdrop-filter: blur(15px);
+
 `;
