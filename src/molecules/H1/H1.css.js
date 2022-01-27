@@ -7,6 +7,7 @@ export const Heading1 = styled.h1`
   color: var(--white);
   text-transform: uppercase;
   margin: 25px 0;
+  
   @media screen and (min-width: 768px) {
     font-size: 150px;
   }

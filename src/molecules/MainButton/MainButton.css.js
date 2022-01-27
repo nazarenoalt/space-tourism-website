@@ -7,6 +7,16 @@ export const HoverShadow = styled.div`
   transition: all .25s;
   width: 150px;
   height: 150px;
+
+  @media screen and (min-width: 768px) {
+    width: 242px;
+    height: 242px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 274px;
+    height: 274px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -27,12 +37,12 @@ export const Wrapper = styled.div`
 
 
 export const Button = styled.div`
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  position: absolute;
   background-color: var(--white);
   border: none;
   border-radius: 100%;
@@ -41,12 +51,21 @@ export const Button = styled.div`
   span {
     color: var(--black);
     font-size: 20px;
-    letter-spacing: 1.25px;
+    letter-spacing: 1.55px;
     font-family: "Bellefair", serif;
     text-transform: uppercase;
   }
 
   @media screen and (min-width: 768px) {
+    width: 242px;
+    height: 242px;
+    align-items: space-around;
+    span {
+      font-size: 32px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
     width: 274px;
     height: 274px;
   }
