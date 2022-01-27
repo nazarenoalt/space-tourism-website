@@ -7,6 +7,8 @@ export const GlobalStyle = createGlobalStyle`
   --light-blue: #D0D6F9;
   --white: #FFF;
   --black: #0B0D17;
+  --dark-grayish-blue: rgba(0,0,0,0.5);
+    word-break: break-word;
 }
 
 body {
@@ -19,4 +21,12 @@ ul {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
 `

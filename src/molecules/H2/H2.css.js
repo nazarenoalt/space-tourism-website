@@ -6,4 +6,8 @@ export const Heading2 = styled.h2`
   letter-spacing: 5px;
   color: var(--white);
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 100px;
+  }
 `;

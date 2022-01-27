@@ -8,7 +8,7 @@ import Logo from '../../assets/icons/logo.svg'
 import { Wrapper } from './Navbar.css';
 
 const Navbar = () => {
-  const [menuIsOpen, setMenuIsOpen] = useState(true);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const handleMenuClick = () => {
     setMenuIsOpen(!menuIsOpen)
