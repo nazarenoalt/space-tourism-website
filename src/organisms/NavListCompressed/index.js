@@ -1,6 +1,6 @@
 import React from 'react';
 // styles
-import { Wrapper } from './NavList.css';
+import { Wrapper } from './NavListCompressed.css';
 // molecules
 import NavLi from '../../molecules/NavLi';
 import BurgerMenu from '../../molecules/BurgerMenu';

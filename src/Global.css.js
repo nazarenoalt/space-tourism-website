@@ -7,7 +7,8 @@ export const GlobalStyle = createGlobalStyle`
   --light-blue: #D0D6F9;
   --white: #FFF;
   --black: #0B0D17;
-  --dark-grayish-blue: rgba(0,0,0,0.5);
+  --dark-grayish-blue: rgba(23, 24, 38, 82%);
+  --transparent-dark-grayish-blue: rgba(0,0,0,0.5);;
     word-break: break-word;
 }
 

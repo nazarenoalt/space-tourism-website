@@ -12,6 +12,16 @@ export const Wrapper = styled.div`
   img {
     width: 40px;
     height: 40px;
-    margin: 35px 20px;
+    margin: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 100px;
+
+    img {
+      width: 48px;
+      height: 48px;
+      margin: 4git a0px;
+    }
   }
 `;

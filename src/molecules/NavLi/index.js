@@ -5,9 +5,9 @@ import NavText from '../NavText';
 import { Li } from './NavLi.css';
 
 const NavLi = ({ children, order, address }) => {
-  return <Li>
+  return <Li className="nav-li">
     <NavText>
-        <b>{order}</b> {children}
+        <b className="order-number">{order}</b> {children}
     </NavText>
   </Li>;
 };

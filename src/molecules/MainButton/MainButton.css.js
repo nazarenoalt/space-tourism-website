@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HoverShadow = styled.div`
   position: absolute;
-  background: var(--dark-grayish-blue);
+  background: var(--transparent-dark-grayish-blue);
   border-radius: 100%;
   transition: all .25s;
   width: 150px;
