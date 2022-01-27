@@ -27,7 +27,9 @@ export const Container = styled.div`
   }
 
  .button-container {
-  margin-top: 20px;
+    display: grid;
+    place-items: center;
+    width: 100%;
  }
 
  @media screen and (min-width: 768px) {

@@ -11,6 +11,9 @@ export const HoverShadow = styled.div`
   @media screen and (min-width: 768px) {
     width: 242px;
     height: 242px;
+
+    left:-25%;
+    top: -25%;
   }
 
   @media screen and (min-width: 1024px) {
@@ -38,6 +41,7 @@ export const Wrapper = styled.div`
 
 export const Button = styled.div`
   position: absolute;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +64,8 @@ export const Button = styled.div`
     width: 242px;
     height: 242px;
     align-items: space-around;
+    left:-25%;
+    top: -25%;
     span {
       font-size: 32px;
     }
