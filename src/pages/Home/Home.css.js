@@ -1,11 +1,13 @@
 import styled from "styled-components";
 // assets
-import background from '../../assets/home/background-home-mobile.jpg'
+import mobileBackground from '../../assets/home/background-home-mobile.jpg'
+import tabletBackground from '../../assets/home/background-home-tablet.jpg'
+import desktopBackground from '../../assets/home/background-home-desktop.jpg'
 
 export const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: url(${background});
+  background-image: url(${mobileBackground});
   background-size: cover;
   background-position: 50% 50%;
   color: white;
@@ -33,7 +35,16 @@ export const Container = styled.div`
  }
 
  @media screen and (min-width: 768px) {
-   padding: 100px 17% 0;
+  padding: 100px 17% 0;
   justify-content: space-around;
+  background-image: url(${tabletBackground});
+  background-size: cover;
+  background-position: 50% 50%;
  }
+
+@media screen and (min-width: 1024px) {
+  background-image: url(${desktopBackground});
+  background-size: cover;
+  background-position: 50% 50%;
+}
 `;
