@@ -12,7 +12,7 @@ export const Heading5 = styled.h5`
     font-size: 20px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
     font-size: 28px;
   }
 `;

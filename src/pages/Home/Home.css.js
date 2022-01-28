@@ -42,7 +42,8 @@ export const Container = styled.div`
   background-position: 50% 50%;
  }
 
-@media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
+  flex-direction: row;
   background-image: url(${desktopBackground});
   background-size: cover;
   background-position: 50% 50%;

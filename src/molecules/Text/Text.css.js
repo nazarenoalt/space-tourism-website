@@ -13,7 +13,7 @@ export const P = styled.p`
     font-size: 16px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
     font-size: 18px;
   }
 `;
