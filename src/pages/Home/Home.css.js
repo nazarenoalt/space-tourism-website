@@ -29,8 +29,9 @@ export const Container = styled.div`
   }
 
  .button-container {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
  }
 
