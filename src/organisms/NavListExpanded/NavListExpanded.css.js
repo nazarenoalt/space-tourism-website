@@ -37,14 +37,20 @@ export const Wrapper = styled.ul`
     :before {
       position: absolute;
       top: 50%;
-      left: -${window.screen.width / 2.5}px;
+      left: -${window.screen.width / 2.8}px;
       display: block;
       content: "";
-      width: ${window.screen.width / 2.4}px;
+      width: ${window.screen.width / 2.6}px;
       border-top: 1px solid var(--white);
       opacity: 50%;
     }
   }
 
+  @media screen and (min-width: 1920px) {
+    :before {
+      left: -${window.screen.width / 2}px;
+      width: ${window.screen.width / 1.9}px;
+    }
+  }
 
   `;
