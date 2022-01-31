@@ -2,7 +2,6 @@ import React from 'react';
 // styles
 import { Wrapper, Container } from './Home.css';
 // components
-import Navbar from '../../components/Navbar';
 // molecules
 import H1 from '../../molecules/H1';
 import H5 from '../../molecules/H5';
@@ -13,7 +12,6 @@ import MainButton from '../../molecules/MainButton';
 const Home = () => {
   return (
     <Wrapper>
-      <Navbar />
       <Container>
         <div className="text-container">
           <H5>So, you want to travel to</H5>
