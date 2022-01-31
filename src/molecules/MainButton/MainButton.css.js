@@ -7,7 +7,7 @@ export const HoverShadow = styled.div`
   transition: all .25s;
   width: 150px;
   height: 150px;
-
+  
   @media screen and (min-width: 768px) {
     width: 242px;
     height: 242px;
@@ -16,7 +16,7 @@ export const HoverShadow = styled.div`
     top: -25%;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
     width: 274px;
     height: 274px;
   }
@@ -50,6 +50,7 @@ export const Button = styled.div`
   background-color: var(--white);
   border: none;
   border-radius: 100%;
+  cursor: pointer;
  
   
   span {
@@ -71,7 +72,7 @@ export const Button = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
     width: 274px;
     height: 274px;
   }

@@ -45,8 +45,19 @@ export const Container = styled.div`
 
   @media screen and (min-width: 1440px) {
   flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 100px 15% 0;
   background-image: url(${desktopBackground});
   background-size: cover;
   background-position: 50% 50%;
+
+  .text-container {
+    max-width: 500px;
+  }
+
+  .button-container {
+    justify-content: flex-end;
+  }
 }
 `;
