@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+// molecules
 import BurgerMenu from '../../molecules/BurgerMenu';
 // organisms
 import NavListMobile from '../../organisms/NavListCompressed';

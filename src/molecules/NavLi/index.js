@@ -1,15 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // molecules
 import NavText from '../NavText';
 // styles
-import { Li } from './NavLi.css';
+import { Wrapper } from './NavLi.css';
 
 const NavLi = ({ children, order, address }) => {
-  return <Li className="nav-li">
-    <NavText>
-        <b className="order-number">{order}</b> {children}
-    </NavText>
-  </Li>;
+  return (
+  <Wrapper>
+    <Link to={address}>
+      <li className="nav-li">
+        <NavText>
+              <b className="order-number">{order}</b> {children}
+        </NavText>
+      </li>
+    </Link>
+  </Wrapper>
+  )
 };
 
 export default NavLi;

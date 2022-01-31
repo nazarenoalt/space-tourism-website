@@ -7,8 +7,9 @@ import Navbar from './components/Navbar';
 
 // pages
 import Home from './pages/Home';
-import Test from './pages/Test';
-
+import Destination from './pages/Destination';
+import Crew from './pages/Crew';
+import Technology from './pages/Technology';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
     <Navbar />
       <Routes>
         <Route path="/" element={<Home />}  exact />
+        <Route path="/destination" element={<Destination />}  exact />
+        <Route path="/crew" element={<Crew />}  exact />
+        <Route path="/technology" element={<Technology />}  exact />
       </Routes>
     </BrowserRouter>
    </React.StrictMode>
