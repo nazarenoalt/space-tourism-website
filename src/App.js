@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Destination from './pages/Destination';
 import Crew from './pages/Crew';
 import Technology from './pages/Technology';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/destination" element={<Destination />}  exact />
         <Route path="/crew" element={<Crew />}  exact />
         <Route path="/technology" element={<Technology />}  exact />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
    </React.StrictMode>
