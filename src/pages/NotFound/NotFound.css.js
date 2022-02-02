@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// assets
 import mobileBackground from '../../assets/destination/background-destination-mobile.jpg'
 import tabletBackground from '../../assets/destination/background-destination-tablet.jpg'
 import desktopBackground from '../../assets/destination/background-destination-desktop.jpg'

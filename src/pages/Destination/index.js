@@ -1,7 +1,14 @@
 import React from 'react';
+import { Wrapper, Container } from './Destination.css';
 
 const Destination = () => {
-  return <div>Destination</div>;
+  return (
+    <Wrapper>
+      <Container>
+        <div>Destination</div>
+      </Container>
+    </Wrapper>
+  )
 };
 
 export default Destination;

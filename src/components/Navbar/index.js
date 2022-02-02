@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 // molecules
 import BurgerMenu from '../../molecules/BurgerMenu';
 // organisms
@@ -31,7 +32,9 @@ const Navbar = () => {
 
   return (
     <Wrapper>
-      <img src={Logo} />
+      <Link to="/">
+        <img className="logo" src={Logo} />
+      </Link>
       {width < 768 
       ? menuIsOpen ? <NavListMobile
           handleMenuClick={handleMenuClick}

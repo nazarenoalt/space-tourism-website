@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
     height: 100px;
 
-    img {
+    .logo {
       width: 48px;
       height: 48px;
       margin: 4git a0px;
