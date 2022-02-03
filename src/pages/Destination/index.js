@@ -1,11 +1,13 @@
 import React from 'react';
 import { Wrapper, Container } from './Destination.css';
+// components
+import DestinationSlider from "../../components/DestinationSlider";
 
 const Destination = () => {
   return (
     <Wrapper>
       <Container>
-        <div>Destination</div>
+        <DestinationSlider />
       </Container>
     </Wrapper>
   )

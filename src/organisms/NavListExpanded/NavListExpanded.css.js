@@ -4,7 +4,6 @@ const halfScreenWidth = () => {
   return window.screen.width / 2;
 }
 
-console.log(halfScreenWidth())
 export const Wrapper = styled.ul`
   display: flex;
   color: var(--white);

@@ -8,10 +8,10 @@ import { Wrapper } from './NavLi.css';
 const NavLi = ({ children, order, address }) => {
   return (
   <Wrapper>
-    <Link to={address}>
+    <Link to={address && address}>
       <li className="nav-li">
         <NavText>
-              <b className="order-number">{order}</b> {children}
+              <b className="order-number">{order && order}</b> {children}
         </NavText>
       </li>
     </Link>
