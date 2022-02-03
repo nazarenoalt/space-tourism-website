@@ -44,6 +44,8 @@ export const List = styled.div`
     text-transform: uppercase;
     transition: all .2s;
     color: var(--light-blue);
+    padding-bottom: 15px;
+    border-bottom: 4px solid transparent;
   }
 
   li:hover {
@@ -52,8 +54,7 @@ export const List = styled.div`
 
   .active {
     color: var(--white);
-    border-bottom: 4px solid var(--white);
-    padding-bottom: 15px;
+    border-color: var(--white);
   }
 
   @media screen and (min-width: 768px) {

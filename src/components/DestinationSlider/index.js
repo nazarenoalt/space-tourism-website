@@ -19,8 +19,15 @@ import titanImage from '../../assets/destination/image-titan.webp';
 const DestinationSlider = () => {
   const [image, setImage] = React.useState(moonImage);
   const [activeLi, setActiveLi] = React.useState(0);
-
-  const handleListClick = (liNumber) => {
+  
+  const handleListClick = (event, liNumber) => {
+    // select li elements and quite 
+    const listElements = document.querySelectorAll('.li');
+    listElements.forEach(element => {
+      element.classList.contains('active') && element.classList.remove('active');
+    })
+    const element = event.currentTarget;
+    element.classList.add('active');
   }
 
   return (
@@ -32,16 +39,16 @@ const DestinationSlider = () => {
         </Subtitle2>
         <img src={image} className="planet-image" />
         <List>
-          <li onClick={() => handleListClick(0)} className="li active">
+          <li onClick={(e) => handleListClick(e, 0)} className="li active">
             <span>MOON</span>
           </li>
-          <li onClick={() => handleListClick(1)} className="li active">
+          <li onClick={(e) => handleListClick(e, 1)} className="li">
             <span>MARS</span>
           </li>
-          <li onClick={() => handleListClick(2)} className="li active">
+          <li onClick={(e) => handleListClick(e, 2)} className="li">
             <span>EUROPA</span>
           </li>
-          <li onClick={() => handleListClick(3)} className="li active">
+          <li onClick={(e) => handleListClick(e, 3)} className="li">
             <span>TITAN</span>
           </li>
         </List>
