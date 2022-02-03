@@ -18,6 +18,11 @@ import titanImage from '../../assets/destination/image-titan.webp';
 
 const DestinationSlider = () => {
   const [image, setImage] = React.useState(moonImage);
+  const [activeLi, setActiveLi] = React.useState(0);
+
+  const handleListClick = (liNumber) => {
+  }
+
   return (
     <Wrapper>
       <Container>
@@ -27,16 +32,16 @@ const DestinationSlider = () => {
         </Subtitle2>
         <img src={image} className="planet-image" />
         <List>
-          <li className="active">
+          <li onClick={() => handleListClick(0)} className="li active">
             <span>MOON</span>
           </li>
-          <li >
+          <li onClick={() => handleListClick(1)} className="li active">
             <span>MARS</span>
           </li>
-          <li >
+          <li onClick={() => handleListClick(2)} className="li active">
             <span>EUROPA</span>
           </li>
-          <li >
+          <li onClick={() => handleListClick(3)} className="li active">
             <span>TITAN</span>
           </li>
         </List>
