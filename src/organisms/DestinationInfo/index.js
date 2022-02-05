@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Wrapper } from './DestinationInfo.css';
 import H3 from '../../molecules/H3';
 import Text from '../../molecules/Text';
@@ -12,6 +12,10 @@ const DestinationInfo = ({
   distance,
   travel
 }) => {
+  const [width, setWidth] = React.useState(window.screen.width);
+
+  useEffect([])
+
   return (
     <Wrapper>
       <div className="container container-1">

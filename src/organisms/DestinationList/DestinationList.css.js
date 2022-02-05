@@ -18,6 +18,12 @@ export const Container = styled.div`
       padding: 60px 0;
     }
   }
+
+  @media screen and (min-width:1440px) {
+    .planet-image {
+    max-width: 445px;
+    }
+  }
  
 `;
 
@@ -38,6 +44,7 @@ export const List = styled.div`
     color: var(--light-blue);
     padding-bottom: 15px;
     border-bottom: 4px solid transparent;
+    cursor: pointer;
   }
 
   li:hover {

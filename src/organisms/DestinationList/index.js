@@ -2,6 +2,7 @@ import React from 'react';
 // styles
 import { Container, List } from './DestinationList.css';
 // molecules
+import PageTitle from '../../molecules/PageTitle';
 
 const DestinationList = ({
   image,
@@ -12,6 +13,7 @@ const DestinationList = ({
 
   return (
       <Container>
+      <PageTitle number="01">PICK YOUR DESTINATION</PageTitle>
         <img src={image} className="planet-image" />
         <List>
           <li onClick={(e) => handleListClick(e, 0)} className="li active">
