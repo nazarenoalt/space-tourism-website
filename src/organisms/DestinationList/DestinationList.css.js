@@ -14,12 +14,14 @@ export const Container = styled.div`
 
   .planet-image {
     padding: 30px 0;
-    max-width: 60%;
+    width: 60%;
+    max-width: 280px;
     margin: auto;
   }
 
-  .list__li {
-    
+  @media screen and (min-width: 500px) {
+    planet-image {
+    }
   }
 `;
 
