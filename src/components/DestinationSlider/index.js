@@ -3,6 +3,7 @@ import React from 'react';
 import { Wrapper } from './DestinationSlider.css';
 // organisms
 import DestinationList from '../../organisms/DestinationList';
+import DestinationInfo from '../../organisms/DestinationInfo';
 // assets
 import moonImage from '../../assets/destination/image-moon.webp';
 import marsImage from '../../assets/destination/image-mars.webp';
@@ -11,11 +12,22 @@ import titanImage from '../../assets/destination/image-titan.webp';
 
 const DestinationSlider = () => {
   const [image, setImage] = React.useState(moonImage);
-  const [activeLi, setActiveLi] = React.useState(0);
-  
+  const [choosedPlanet, setChoosedPlanet] = React.useState(0);
+  const [data, setData] = React.useState([{name:"", description:"", distance:"", travel:"" }])
+
+  React.useEffect(() => {
+    const fetchJSON = async () => {
+      const response = await fetch('../../data.json')
+      const json = await response.json();
+      setData(json.destinations)
+    }
+
+    fetchJSON()
+  }, []);
+
   const handleListClick = (event, liNumber) => {
     //change active li state
-    setActiveLi(liNumber);
+    setChoosedPlanet(liNumber);
 
     // select li elements and quite 
     const listElements = document.querySelectorAll('.li');
@@ -30,17 +42,23 @@ const DestinationSlider = () => {
 
   // set planet image according to active element
   React.useEffect(() => {
-    if(activeLi === 0) { setImage(moonImage) }
-    if(activeLi === 1) { setImage(marsImage) }
-    if(activeLi === 2) { setImage(europaImage) }
-    if(activeLi === 3) { setImage(titanImage) }
-  }, [activeLi, setActiveLi])
+    if(choosedPlanet === 0) { setImage(moonImage) }
+    if(choosedPlanet === 1) { setImage(marsImage) }
+    if(choosedPlanet === 2) { setImage(europaImage) }
+    if(choosedPlanet === 3) { setImage(titanImage) }
+  }, [choosedPlanet, setChoosedPlanet])
 
   return (
     <Wrapper>
       <DestinationList 
         image={image}
         handleListClick={handleListClick}
+      />
+      <DestinationInfo
+        name={data[choosedPlanet].name}
+        description={data[choosedPlanet].description}
+        distance={data[choosedPlanet].distance}
+        travel={data[choosedPlanet].travel}
       />
     </Wrapper>
   );

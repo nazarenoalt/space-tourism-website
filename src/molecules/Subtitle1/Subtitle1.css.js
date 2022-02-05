@@ -5,4 +5,5 @@ export const P = styled.p`
   font-size: 28px;
   color: var(--white);
   text-transform: uppercase;
+  text-align: center;
 `;
