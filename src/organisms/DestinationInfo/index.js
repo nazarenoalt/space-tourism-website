@@ -25,7 +25,7 @@ const DestinationInfo = ({
         </div>
         <div className="data-section">
           <Subtitle2 className="subtitle">EST. TRAVEL TIME</Subtitle2>
-          <Subtitle1 className="subtitle__description">{travel}</Subtitle1>
+          <Subtitle1 className="subtitle__description"  id="id">{travel}</Subtitle1>
         </div>
       </div>
     </Wrapper>

@@ -1,25 +1,35 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  .title {
+    background-color: red;
+  }
+
   .container {
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
   .container-1 {
     border-bottom: 1px solid var(--dark-gray);
-    padding: 20px 0 25px;
+    padding: 20px 0 40px;
+
+    h3 {
+      padding-bottom: 20px;
+    }
   }
 
   .container-2 {
-    padding: 20px 0 25px;
+    padding: 40px 0 0;
+
+    
   }
 
   .data-section {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+
+    p {
+      padding-bottom: 15px;
+    }
   }
 
-  .subtitle {
-    padding: 20px;
-    background-color: red;
-  }
 `;

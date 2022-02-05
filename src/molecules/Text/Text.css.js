@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const P = styled.p`
   font-family: 'Barlow', serif;
   color: var(--white);
-  font-size: 14px;
+  font-size: 16x;
   line-height:  28px;
   text-align: center;
   color: var(--light-blue);
