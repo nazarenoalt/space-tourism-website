@@ -32,4 +32,16 @@ export const Wrapper = styled.div`
     }
   }
 
+  @media screen and (min-width: 768px) {
+    
+    .container {
+      width: 70%;
+    }
+
+    .container-2 {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
 `;

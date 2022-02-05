@@ -9,6 +9,7 @@ import moonImage from '../../assets/destination/image-moon.webp';
 import marsImage from '../../assets/destination/image-mars.webp';
 import europaImage from '../../assets/destination/image-europa.webp';
 import titanImage from '../../assets/destination/image-titan.webp';
+import PageTitle from '../../molecules/PageTitle';
 
 const DestinationSlider = () => {
   const [image, setImage] = React.useState(moonImage);
@@ -50,6 +51,7 @@ const DestinationSlider = () => {
 
   return (
     <Wrapper>
+      <PageTitle number="01">PICK YOUR DESTINATION</PageTitle>
       <DestinationList 
         image={image}
         handleListClick={handleListClick}

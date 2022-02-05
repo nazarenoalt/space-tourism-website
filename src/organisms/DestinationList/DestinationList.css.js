@@ -5,13 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
-  .title__number-order {
-    padding-right: 10px;
-    opacity: 50%;
-    font-weight: bold;
-  }
-
+  
   .planet-image {
     padding: 30px 0;
     width: 60%;
@@ -19,10 +13,12 @@ export const Container = styled.div`
     margin: auto;
   }
 
-  @media screen and (min-width: 500px) {
-    planet-image {
+  @media screen and (min-width:768px) {
+    .planet-image {
+      padding: 60px 0;
     }
   }
+ 
 `;
 
 export const List = styled.div`
@@ -54,7 +50,10 @@ export const List = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    li { font-size: 16px; }
+    li { 
+      font-size: 16px;
+      margin: 0 20px;
+     }
   }
 
   @media screen and (min-width: 1440px) {
