@@ -14,7 +14,6 @@ const DestinationInfo = ({
 }) => {
   const [width, setWidth] = React.useState(window.screen.width);
 
-  useEffect([])
 
   return (
     <Wrapper>

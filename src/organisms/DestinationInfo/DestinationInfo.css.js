@@ -1,14 +1,11 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  .title {
-    background-color: red;
-  }
-
   .container {
     width: 80%;
     margin: auto;
   }
+
   .container-1 {
     border-bottom: 1px solid var(--dark-gray);
     padding: 20px 0 40px;
@@ -20,7 +17,6 @@ export const Wrapper = styled.div`
 
   .container-2 {
     padding: 40px 0 0;
-
     
   }
 
@@ -42,6 +38,11 @@ export const Wrapper = styled.div`
       display: flex;
       justify-content: space-around;
     }
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: grid;
+    place-content: center;
   }
 
 `;
