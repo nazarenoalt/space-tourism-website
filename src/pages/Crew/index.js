@@ -1,11 +1,16 @@
 import React from 'react';
 // styles
 import { Wrapper } from './Crew.css';
+// molecules
+import PageTitle from '../../molecules/PageTitle';
+// organisms
+import CrewSlider from '../../components/CrewSlider';
 
 const Crew = () => {
   return (
     <Wrapper>
-      <div>Hola</div>
+      <PageTitle number="02">Meet your crew</PageTitle>
+      <CrewSlider />
     </Wrapper>
   );
 };
