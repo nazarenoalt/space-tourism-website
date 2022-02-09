@@ -9,26 +9,18 @@ import NavListDesktop from '../../organisms/NavListExpanded';
 import Logo from '../../assets/icons/logo.svg'
 // styles
 import { Wrapper } from './Navbar.css';
+// hooks
+import useScreenWidth from '../../hooks/useScreenWidth';
 
 const Navbar = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const [width, setWidth] = useState(window.screen.width);
+  const { width } = useScreenWidth();
   
   const handleMenuClick = () => {
     setMenuIsOpen(!menuIsOpen)
   }
   
-  const handleSetWidth = () => {
-    setWidth(window.screen.width);
-  };
 
-  useEffect(() => {
-    window.addEventListener('resize', handleSetWidth)
-
-    return () => {
-      window.removeEventListener('resize', handleSetWidth)
-    }
-  }, [width, handleSetWidth])
 
   return (
     <Wrapper>

@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
   background: var(--black);
   margin: 0;
+  color: var(--white);
 }
 
 ul {

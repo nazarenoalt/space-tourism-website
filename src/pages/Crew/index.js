@@ -1,7 +1,13 @@
 import React from 'react';
+// styles
+import { Wrapper } from './Crew.css';
 
 const Crew = () => {
-  return <div>Crew</div>;
+  return (
+    <Wrapper>
+      <div>Hola</div>
+    </Wrapper>
+  );
 };
 
 export default Crew;
