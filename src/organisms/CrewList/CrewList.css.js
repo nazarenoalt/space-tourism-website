@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   }
 
   .crewmate-image {
-    width: 60%;
+    height: 200px;
     max-width: 100%;
   }
 `;

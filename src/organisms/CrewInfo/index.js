@@ -10,8 +10,8 @@ const CrewInfo = ({ name, role, bio, onClick }) => {
   return (
     <Wrapper>
       <PointNav onClick={onClick}/>
-      <H4>{name}</H4>
-      <H3>{role}</H3>
+      <H4>{role}</H4>
+      <H3>{name}</H3>
       <Text>{bio}</Text>
     </Wrapper>
   )
