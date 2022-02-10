@@ -13,4 +13,8 @@ export const Heading4 = styled.h4`
   @media screen and (min-width: 768px) {
     font-size: 24px;
   }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 32px;
+  }
 `;

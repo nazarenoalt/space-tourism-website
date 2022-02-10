@@ -15,4 +15,11 @@ export const Container = styled.div`
       margin-left: 30px;
     }
   }
+
+  @media screen and (min-width: 1440px) {
+    p {
+      font-size: 28px;
+      margin-left: 7.5%;
+    }
+  }
 `;

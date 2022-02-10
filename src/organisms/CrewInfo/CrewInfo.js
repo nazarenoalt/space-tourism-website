@@ -18,4 +18,27 @@ export const Wrapper = styled.div`
     width: 65%;
     margin: 0 auto;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 100%;
+
+    padding-top: 150px;
+    padding-left: 15%;
+    p, h3, h4 {
+      text-align: start;
+    }
+
+    h3 {
+      margin: 25px 0 50px;
+    }
+
+    h4 {
+      margin: 0;
+    }
+
+    p {
+      width: 80%;
+    }
+  }
 `;

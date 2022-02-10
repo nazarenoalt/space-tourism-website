@@ -35,4 +35,12 @@ export const Wrapper = styled.div`
       display: none;
     }
   }
+
+  @media screen and (min-width: 1440px) {
+    position: static;
+
+    .crewmate-image {
+      height: 700px;
+    }
+  }
 `;

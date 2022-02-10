@@ -12,4 +12,8 @@ export const Heading3 = styled.h3`
   @media screen and (min-width: 768px) {
     font-size: 40px;
   }
+  
+  @media screen and (min-width: 1440px) {
+    font-size: 56px;
+  }
 `;
