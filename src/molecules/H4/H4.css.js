@@ -11,6 +11,6 @@ export const Heading4 = styled.h4`
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    font-size: 32px;
+    font-size: 24px;
   }
 `;

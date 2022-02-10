@@ -20,4 +20,8 @@ export const Wrapper = styled.div`
   .point.active {
     opacity: 1;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
 `;

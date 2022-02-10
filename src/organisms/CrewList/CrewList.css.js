@@ -20,4 +20,19 @@ export const Wrapper = styled.div`
     height: 200px;
     max-width: 100%;
   }
+
+  @media screen and (min-width:768px) {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 0;
+    .crewmate-image {
+      height: 500px;
+    }
+
+    :before {
+      display: none;
+    }
+  }
 `;

@@ -6,9 +6,11 @@ import CrewList from '../../organisms/CrewList';
 import CrewInfo from '../../organisms/CrewInfo';
 // hooks
 import useSelectOption from '../../hooks/useSelectOption';
+import useScreenWidth from '../../hooks/useScreenWidth';
 
 const CrewSlider = () => {
   const { option, handleOption } = useSelectOption();
+  const { width } = useScreenWidth();
 
   const [data, setData] = useState([{
     name:"",
@@ -27,13 +29,28 @@ const CrewSlider = () => {
 
   return (
     <Wrapper>
-      <CrewList onClick={handleOption} crew={data[option].name} />
+      {/* render <CrewList> on bottom if width is more than 768px */}
+      {width < 768 && (
+        <CrewList
+          onClick={handleOption}
+          crew={data[option].name}
+        />
+      )}
+
       <CrewInfo 
         onClick={handleOption} 
         name={data[option].name}
         role={data[option].role}
         bio={data[option].bio}
       />
+
+      {/* render <CrewList> on bottom if width is more than 768px */}
+      {width >= 768 && (
+        <CrewList
+          onClick={handleOption}
+          crew={data[option].name}
+        />
+      )}
     </Wrapper>
   )
 }

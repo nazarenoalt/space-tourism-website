@@ -17,7 +17,6 @@ const CrewList = ({ crew }) => {
     if(crew === "Anousheh Ansari") setImage(anoushehImage);
   }, [crew])
 
-  console.log(crew)
   return (
     <Wrapper>
       <img className="crewmate-image" src={image} />

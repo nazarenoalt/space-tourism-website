@@ -10,12 +10,14 @@ const PointNav = ({ onClick }) => {
       if(div.classList.contains("active")) {
         div.classList.remove("active");
       }
-
-     e.currentTarget.classList.add("active")
+      //add default active class
+      e 
+      ? e.currentTarget.classList.add("active")
+      : listDivs[0].classList.add("active")
     })
-      
-    console.log(listDivs)
   }
+
+  useEffect(addActiveClass,[])
 
   return (
     <Wrapper>

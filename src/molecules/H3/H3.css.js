@@ -10,6 +10,6 @@ export const Heading3 = styled.h3`
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    font-size: 56px;
+    font-size: 40px;
   }
 `;
