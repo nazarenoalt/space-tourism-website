@@ -1,13 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 
 export default function useFetchData() {
-  const [data, setData] = useState({});
+  let jsonData;
 
-  useEffect(async () => {
-      const response = await fetch('../../data.json')
-      const json = await response.json();
-      setData(json)
+  useLayoutEffect(() => {
+      async function fetchData() {
+        const response = await fetch('../../data.json')
+        const json = await response.json();
+        jsonData = json;
+      }
+      fetchData();
+
   }, []);
 
-  return { data }
+  return { jsonData }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // styles
 import { Wrapper } from './DestinationSlider.css';
 // organisms
@@ -11,11 +11,11 @@ import europaImage from '../../assets/destination/image-europa.webp';
 import titanImage from '../../assets/destination/image-titan.webp';
 
 const DestinationSlider = () => {
-  const [image, setImage] = React.useState(moonImage);
-  const [choosedPlanet, setChoosedPlanet] = React.useState(0);
-  const [data, setData] = React.useState([{name:"", description:"", distance:"", travel:"" }])
+  const [image, setImage] = useState(moonImage);
+  const [choosedPlanet, setChoosedPlanet] = useState(0);
+  const [data, setData] = useState([{name:"", description:"", distance:"", travel:"" }])
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fetchJSON = async () => {
       const response = await fetch('../../data.json')
       const json = await response.json();
