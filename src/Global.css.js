@@ -11,11 +11,13 @@ export const GlobalStyle = createGlobalStyle`
   --dark-grayish-blue: rgba(23, 24, 38, 82%);
   --transparent-dark-grayish-blue: rgba(0,0,0,0.5);
   --dark-gray: #383B4B;
+  --gray: #979797;
 }
 
 body {
   background: var(--black);
   margin: 0;
+  color: var(--white);
 }
 
 ul {
