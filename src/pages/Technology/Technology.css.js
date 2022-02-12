@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
   }
 
   @media screen and (min-width:1440px) {
-    padding-top: 200px;
     background-image: url(${backgroundDesktop});
   }
 `;

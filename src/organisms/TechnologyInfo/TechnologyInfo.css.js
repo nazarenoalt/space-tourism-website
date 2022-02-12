@@ -19,4 +19,25 @@ export const Wrapper = styled.div`
       margin: 30px 0 20px;
     }
   }
+
+  @media screen and (min-width:  1440px) {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    margin-left: 25%;
+
+    h5 {
+      text-align: start;
+      margin-top: 0;
+    }
+
+    h3 {
+      text-align: start;
+    }
+    
+    p {
+      text-align: start;
+      width: 90%;
+    }
+  }
 `;

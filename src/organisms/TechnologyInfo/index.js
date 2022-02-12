@@ -11,9 +11,12 @@ const TechnologyInfo = ({ name, description, onClick }) => {
   return (
     <Wrapper>
       <CircleNumberNav onClick={onClick} />
-      <H5>THE TERMINOLOGY...</H5>
-      <H3>{name}</H3>
-      <Text>{description}</Text>
+      
+      <div className="info-container">
+        <H5>THE TERMINOLOGY...</H5>
+        <H3>{name}</H3>
+        <Text>{description}</Text>
+      </div>
     </Wrapper>
   )
 }

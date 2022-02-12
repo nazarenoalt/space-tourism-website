@@ -35,10 +35,12 @@ export const Wrapper = styled.div`
 
   @media screen and (min-width: 1440px) {
     position: absolute;
-    bottom: 100px;
+    flex-direction: column;
+    left: 7%;
     .circle {
-        width: 15px;
-        height: 15px;
+       margin: 15px 0;
+        width: 80px;
+        height: 80px;
     }
   }
 `;
