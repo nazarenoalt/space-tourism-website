@@ -24,7 +24,13 @@ export const Wrapper = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    margin-top: 30px;
+    margin: 50px 0;
+
+    .circle {
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+    }
   }
 
   @media screen and (min-width: 1440px) {
