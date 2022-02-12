@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 // molecules
 import BurgerMenu from '../../molecules/BurgerMenu';
 // organisms
-import NavListMobile from '../../organisms/NavListCompressed';
-import NavListDesktop from '../../organisms/NavListExpanded';
+import NavListCompressed from '../../organisms/NavListCompressed';
+import NavListExpanded from '../../organisms/NavListExpanded';
 // assets
 import Logo from '../../assets/icons/logo.svg'
 // styles
@@ -28,14 +28,14 @@ const Navbar = () => {
         <img className="logo" src={Logo} />
       </Link>
       {width < 768 
-      ? menuIsOpen ? <NavListMobile
+      ? menuIsOpen ? <NavListCompressed
           handleMenuClick={handleMenuClick}
           menuIsOpen={menuIsOpen}
         />
         : <BurgerMenu 
           handleMenuClick={handleMenuClick}
           menuIsOpen={menuIsOpen}
-      /> : <NavListDesktop />}
+      /> : <NavListExpanded />}
       
       
     </Wrapper>

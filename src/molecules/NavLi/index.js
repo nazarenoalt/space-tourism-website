@@ -5,11 +5,11 @@ import NavText from '../NavText';
 // styles
 import { Wrapper } from './NavLi.css';
 
-const NavLi = ({ children, order, address }) => {
+const NavLi = ({ children, order, address, onClick }) => {
   return (
   <Wrapper>
     <Link to={address && address}>
-      <li className="nav-li">
+      <li className="nav-li" onClick={onClick}>
         <NavText>
               <b className="order-number">{order && order}</b> {children}
         </NavText>
