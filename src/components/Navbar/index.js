@@ -11,16 +11,16 @@ import Logo from '../../assets/icons/logo.svg'
 import { Wrapper } from './Navbar.css';
 // hooks
 import useScreenWidth from '../../hooks/useScreenWidth';
+import useSelectOption from '../../hooks/useSelectOption';
 
 const Navbar = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const { width } = useScreenWidth();
-  
+  const { option, handleOption } = useSelectOption(1);
+
   const handleMenuClick = () => {
     setMenuIsOpen(!menuIsOpen)
   }
-  
-
 
   return (
     <Wrapper>
@@ -30,12 +30,17 @@ const Navbar = () => {
       {width < 768 
       ? menuIsOpen ? <NavListCompressed
           handleMenuClick={handleMenuClick}
+          handleOption={handleOption}
           menuIsOpen={menuIsOpen}
+          option={option}
         />
         : <BurgerMenu 
           handleMenuClick={handleMenuClick}
           menuIsOpen={menuIsOpen}
-      /> : <NavListExpanded />}
+      /> : <NavListExpanded
+            handleOption={handleOption}
+            option={option}
+          />}
       
       
     </Wrapper>

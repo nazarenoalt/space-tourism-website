@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-export default function useSelectOption() {
-  const [option, setOption] = useState(0);
+export default function useSelectOption(value) {
+  const [option, setOption] = useState(value || 0);
 
   const handleOption = (event) => {
     const number = parseInt(event.currentTarget.getAttribute("value"));

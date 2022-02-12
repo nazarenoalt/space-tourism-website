@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // molecules
 import NavText from '../NavText';
 // styles
 import { Wrapper } from './NavLi.css';
 
-const NavLi = ({ children, order, address, onClick }) => {
+const NavLi = ({ children, value, address, option, onClick }) => {
+
+  let itemSelected = option === parseInt(value);
   return (
   <Wrapper>
     <Link to={address && address}>
-      <li className="nav-li" onClick={onClick}>
+      <li
+        className={`nav-li ${itemSelected ? "active" : ""}`}
+        onClick={onClick}
+        value={value}
+      >
         <NavText>
-              <b className="order-number">{order && order}</b> {children}
+              <b className="value-number">{value && value}</b> {children}
         </NavText>
       </li>
     </Link>

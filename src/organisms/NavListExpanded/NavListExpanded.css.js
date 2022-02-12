@@ -13,22 +13,6 @@ export const Wrapper = styled.ul`
   padding: 0 50px;
   
   
-  .order-number {
-    display: none;
-  }
-
-  .nav-li {
-    padding: 0 25px;
-    height: 100px;
-    line-height: 100px;
-    transition: all .1s;
-  }
-
-  .nav-li.active,
-  .nav-li:hover {
-    border-bottom: 3px solid var(--white);
-  }
-
   @media screen and (min-width: 1440px) {
     padding-left: 100px;
     padding-right: 250px;

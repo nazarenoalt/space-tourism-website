@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  
   .circle {
     display: flex;
     align-items: center;
@@ -14,9 +15,8 @@ export const Wrapper = styled.div`
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 100%;
     transition: all .2s;
+    cursor: pointer;
   }
-
-
 
   .circle.active {
     background-color: var(--white);
