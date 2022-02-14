@@ -5,9 +5,9 @@ import NavText from '../NavText';
 // styles
 import { Wrapper } from './NavLi.css';
 
-const NavLi = ({ children, value, address, option, onClick }) => {
+const NavLi = ({ children, value, address, onClick }) => {
 
-  let itemSelected = option === parseInt(value);
+  let itemSelected = address === window.location.pathname;
   return (
   <Wrapper>
     <Link to={address && address}>

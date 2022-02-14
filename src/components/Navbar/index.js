@@ -30,16 +30,12 @@ const Navbar = () => {
       {width < 768 
       ? menuIsOpen ? <NavListCompressed
           handleMenuClick={handleMenuClick}
-          handleOption={handleOption}
           menuIsOpen={menuIsOpen}
-          option={option}
         />
         : <BurgerMenu 
           handleMenuClick={handleMenuClick}
           menuIsOpen={menuIsOpen}
       /> : <NavListExpanded
-            handleOption={handleOption}
-            option={option}
           />}
       
       

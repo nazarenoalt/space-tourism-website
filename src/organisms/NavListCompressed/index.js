@@ -5,7 +5,7 @@ import { Wrapper } from './NavListCompressed.css';
 import NavLi from '../../molecules/NavLi';
 import BurgerMenu from '../../molecules/BurgerMenu';
 
-const NavListMobile = ({ handleMenuClick, menuIsOpen, handleOption, option }) => {
+const NavListCompressed = ({ handleMenuClick, menuIsOpen }) => {
   return (
     <Wrapper>
       <BurgerMenu 
@@ -18,48 +18,32 @@ const NavListMobile = ({ handleMenuClick, menuIsOpen, handleOption, option }) =>
           key="01"
           value="01"
           address="/"
-          option={option}
-          onClick={(e) => {
-            handleMenuClick();
-            handleOption(e);
-          }}
+          onClick={handleMenuClick}
         >Home</NavLi>
 
         <NavLi
           key="02"
           value="02"
           address="/destination"
-          option={option}
-          onClick={(e) => {
-            handleMenuClick();
-            handleOption(e);
-          }}
+          onClick={handleMenuClick}
         >Destination</NavLi>
 
         <NavLi
           key="03"
           value="03"
           address="/crew"
-          option={option}
-          onClick={(e) => {
-            handleMenuClick();
-            handleOption(e);
-          }}
+          onClick={handleMenuClick}
         >Crew</NavLi>
 
         <NavLi
           key="04"
           value="04"
           address="/technology"
-          option={option}
-          onClick={(e) => {
-            handleMenuClick();
-            handleOption(e);
-          }}
+          onClick={handleMenuClick}
         >Technology</NavLi>
       </ul>
     </Wrapper>
   );
 };
 
-export default NavListMobile;
+export default NavListCompressed;
