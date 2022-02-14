@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // molecules
 import NavText from '../NavText';
@@ -6,8 +6,8 @@ import NavText from '../NavText';
 import { Wrapper } from './NavLi.css';
 
 const NavLi = ({ children, value, address, onClick }) => {
+  const [itemSelected, setItemSelected] = useState(address === window.location.pathname)
 
-  let itemSelected = address === window.location.pathname;
   return (
   <Wrapper>
     <Link to={address && address}>

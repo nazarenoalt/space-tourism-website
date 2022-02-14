@@ -4,7 +4,7 @@ import { Wrapper } from './NavListExpanded.css';
 // molecules
 import NavLi from '../../molecules/NavLi';
 
-const NavListExpanded = ({ option }) => {
+const NavListExpanded = () => {
   return (
     <Wrapper>
       <NavLi
