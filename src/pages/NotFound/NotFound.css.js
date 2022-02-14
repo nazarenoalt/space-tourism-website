@@ -41,7 +41,7 @@ export const Container = styled.div`
 
   ::before {
       position: absolute;
-      width: 500px;
+      max-width: 500px;
       text-align: center;
       content: "Tap to go home";
       top: 0;
